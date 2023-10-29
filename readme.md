@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto Papelaria" src="../Imagens_papelaria/exemplo.png" width="100%">
+  <img alt="projeto Papelaria" src="../projeto7_papelaria/Imagens_papelaria/exemplo.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
