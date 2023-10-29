@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --largura:1440px;
+    --largura2:1250px;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-text-emphasis: #052c65;
+    --bs-secondary-text-emphasis: #2b2f32;
+    --bs-success-text-emphasis: #0a3622;
+    --bs-info-text-emphasis: #055160;
+    --bs-warning-text-emphasis: #664d03;
+    --bs-danger-text-emphasis: #58151c;
+    --bs-light-text-emphasis: #495057;
+    --bs-dark-text-emphasis: #495057;
+    --bs-primary-bg-subtle: #cfe2ff;
+    --bs-secondary-bg-subtle: #e2e3e5;
+    --bs-success-bg-subtle: #d1e7dd;
+}
+header{ 
+    max-width: var(--largura);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:var(--bs-black);
+}
+.icone1{
+    display: flex;
+    font-weight: 300;
+    color: var(--bs-white);
+    padding: 16px 0 0 16px;
+}
+.bi-headset{
+    padding-right: 1em;
+    font-size: 20px;
+}
+.cadastro, .user{
+    display: flex;
+}
+.bi-person-circle{
+    padding: 12px 16px 12px;
+    font-size: 24px;
+    color: var(--bs-white);
+}
+.user{
+    display: block;
+    padding-right: 16px;
+    color: var(--bs-white);
+}
+.cadastro h1{
+    font-size: 16px;
+    font-weight: 400;
+}
+.cadastro p{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+nav{
+    max-width: var(--largura);
+    padding: 16px;
+    background-color:var(--bs-gray-500);
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+}
+.procurar{
+    padding: 10px 0 0 16px; 
+}
+.procurar input{
+    background-color: var(--bs-white);
+    font-size: 20px;
+    border-radius: 12px;
+    padding-left: 8px;
+   
+}
+.bi-search{
+    padding-left: 16px;
+    font-size: 24px;
+}
+.procurar,.car{
+    display: flex;
+    color: var(--bs-white);
+}
+.bi-cart4{
+    font-size: 32px;
+    padding-right: 24px;
+}
+.car p{
+    padding:12px 24px 0 0;
+}
+.navegacao{
+    background-color: var(--bs-gray-600);
+}
+.navegacao ul{
+    display:flex;
+    margin: auto;
+}
+.navegacao a{
+    list-style: none;
+    text-decoration: none;  
+}
+.navegacao li{
+    color: var(--bs-white);
+    padding:0px 40px ;
+}
+.foto{
+    display: flex;
+    width:var(--largura2);
+    margin: auto;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+.foto1{
+    background-image:url(../Imagens_papelaria/promocaomaterial2.jpg);
+    margin-top: 32px;
+    background-repeat: no-repeat;
+    width: 30%;
+    height:408px;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("../Imagens_papelaria/promocaomaterial2.jpg");
+}
+.foto1 h2{
+    padding:32px 32px;
+    font-size: 32px;
+    text-align: center;
+    color: var(--bs-white);
+}
+.foto1 p{
+    padding: 32px 24px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--bs-gray-200);
+}
+.foto1 button{
+    margin: 32px 32px;
+    background-color:var(--bs-warning);
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: var(--bs-warning);
+    font-size: 16px;
+}
+.foto2{
+    background-image: url(../Imagens_papelaria/escritorio1.jpg);
+    margin-top: 32px;
+    width: 70%;
+    height:408px;
+    background-size: cover;
+    background-position:bottom;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("../Imagens_papelaria/escritorio1.jpg");
+}
+.foto2 h2{
+    padding: 32px 0px; 
+    font-size: 32px;
+    text-align: center;
+    color: var(--bs-white);
+}
+.foto2 p{
+    padding: 32px 70px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--bs-gray-200);
+}
+.foto2 button{
+    margin: 104px 100px;
+    background-color:var(--bs-warning);
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: var(--bs-warning);
+    font-size: 16px;
+}
+.texto{
+    width: var(--largura2);
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.texto1{
+    padding: 70px 40px;
+    background-color: var(--bs-secondary);
+    margin-bottom: 50px;
+}
+.texto2{
+    padding: 70px 56px;
+    background-color: var(--bs-secondary);
+    margin-bottom: 50px;
+}
+.texto3{
+    padding: 70px 50px;
+    background-color: var(--bs-secondary);
+    margin-bottom: 50px;
+}
+.titulo_itens{
+    display: block;
+    width: var(--largura2);
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+}
+.itens{
+    max-width: var(--largura2);
+    display: flex;
+    margin: auto;
+}
+.card1,.card7{
+    padding-right: 24px;
+}
+.card1 div{
+    background-image:url(../Imagens_papelaria/borracha.jpeg.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.card1 p,.card7 p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 10px 40px 0;
+}
+.card1 span,.card7 span{
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 32px;
+}
+.card2,.card8{
+    padding-right: 32px;
+}
+.card2 div{
+    background-image:url(../Imagens_papelaria/caneta_bic.jpeg.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.card2 p,.card8 p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 10px 40px 0px;
+}
+.card2 span,.card8 span{
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 32px;
+}
+.card3,.card9{
+    padding-right: 32px;
+}
+.card3 div{
+    background-image:url(../Imagens_papelaria/maleta_homem_aranha.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.card3 p,.card9 p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 30px 40px 0px;
+}
+.card3 span, .card9 span{
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 32px;
+}
+.card4,.card10{
+    padding-right: 32px;
+}
+.card4 div{
+    background-image:url(../Imagens_papelaria/diario.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.card4 p,.card10 p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 30px 40px 0px;
+}
+.card4 span,.card10 span{
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 32px;
+}
+.card5,.card11{
+    padding-right: 32px;
+}
+.card5 div{
+    background-image:url(../Imagens_papelaria/estojo.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.card5 p,.card11 p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 30px 40px 0px;
+}
+.card5 span,.card11 span{
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 32px;
+}
+.card6 div{
+    background-image:url(../Imagens_papelaria/apontador.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.card6 p,.card12 p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 30px 40px 0px;
+}
+.card6 span,.card12 span{
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 32px;
+}
+.produtos{
+    width: var(--largura2);
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+}
+.Compre{
+    padding: 32px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ofertas div{
+    background-image: url(../Imagens_papelaria/OFERTAS.jfif);
+    height: 200px;
+    width: 260px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 32px;
+}
+.ofertas p{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.escritorio div{
+    background-image: url(../Imagens_papelaria/categoriaESCRITORIO.jpg);
+    height: 200px;
+    width: 260px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 32px;
+}
+.escritorio p{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.escolar div{
+    background-image: url(../Imagens_papelaria/categoriaESCOLAR.jpeg);
+    height: 200px;
+    width: 260px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 32px;
+}
+.escolar p{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.limpeza div{
+    background-image: url(../Imagens_papelaria/categoriaLIMPEZA.jpg);
+    height: 200px;
+    width: 260px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 32px;
+}
+.limpeza p{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.produtos2{
+    width: var(--largura2);
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.cafe div{
+    background-image: url(../Imagens_papelaria/categoriaCAFE.jpg);
+    height: 200px;
+    width: 260px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 32px;
+}
+.cafe p{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.mobiliario div{
+    background-image: url(../Imagens_papelaria/categoriaMOBILIARIO.jpeg);
+    height: 200px;
+    width: 260px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 32px;
+}
+.mobiliario p{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.papelaria div{
+    background-image: url(../Imagens_papelaria/categoriaPAPELARIA.jpg);
+    height: 200px;
+    width: 260px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 32px;
+}
+.papelaria p{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.eletronicos div{
+    background-image: url(../Imagens_papelaria/categoriaELETRONICO.jpg);
+    height: 200px;
+    width: 260px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 32px;
+}
+.eletronicos p{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.card7 div{
+    background-image:url(../Imagens_papelaria/SULFITE.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.card8 div{
+    background-image:url(../Imagens_papelaria/estojo2.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.card9 div{
+    background-image:url(../Imagens_papelaria/tesolra.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.card10 div{
+    background-image:url(../Imagens_papelaria/borracha.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.card11 div{
+    background-image:url(../Imagens_papelaria/tesolra2.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.card12 div{
+    background-image:url(../Imagens_papelaria/diario2.webp);
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border: 2px solid var(--bs-black);
+}
+.fotos{
+    max-width: var(--largura2);
+    display: flex;
+    margin: auto;
+    padding: 100px 0; 
+    gap: 24px;
+}
+.foto3{
+    background-image: url(../Imagens_papelaria/artigosPAPELARIAeMATERIALESCOLAR.jpg);
+    width: 50%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("../Imagens_papelaria/artigosPAPELARIAeMATERIALESCOLAR.jpg");
+}
+.foto3 h2,.foto4 h2{
+    padding:32px 32px;
+    font-size: 32px;
+    text-align: center;
+    color: var(--bs-white);
+}
+.foto3 p, .foto4 p{
+    padding: 32px 24px;
+    font-size: 16px;
+    color: var(--bs-gray-200);
+}
+.foto3 button,.foto4 button{
+    margin: 32px 32px;
+    background-color:var(--bs-warning);
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: var(--bs-warning);
+    font-size: 16px;
+}
+.foto4{
+    background-image: url(../Imagens_papelaria/artigosTODOSTAMANHOFORMASESTILOS.jpg);
+    width: 50%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("../Imagens_papelaria/artigosTODOSTAMANHOFORMASESTILOS.jpg");
+}
+.app{
+    max-width: var(--largura2);
+    margin: auto;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Imagens_papelaria/escritorio2.jpg);
+    padding-top: 32px;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("../Imagens_papelaria/escritorio2.jpg");
+
+}
+.app h3{
+    padding:32px 130px;
+    font-size: 32px;
+    text-align:end;
+    color: var(--bs-white);
+}
+.app p{
+    padding: 32px 0;
+    font-size: 24px;
+    color: var(--bs-gray-200);
+    width: 50%;
+    text-align:end;
+    margin-left: 500px;
+}
+.app button{
+    margin: 32px 32px;
+    background-color:var(--bs-warning);
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: var(--bs-warning);
+    font-size: 16px;
+    margin-left: 970px;
+}
